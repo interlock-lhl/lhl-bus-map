@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Where is my bus?</title>
+  <meta name="description" content="answers to lifes hardest questions">
+  <meta name="author" content="LHL">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1>Where is my bus?</h1>
+
+    <div class="row">
+      <div class="one-third column" >
+        <h4>Buses</h4>
+        <button id="update" class="button-primary">Update</button>
+      </div>
+
+      <div class="two-thirds column">
+         <div id="mapid" class="box-debug">Map here</div>
+       </div>
+    </div>
+
+    <div class="row">
+      <div class="one-half column">
+        <ul>
+          <li><a href="http://getskeleton.com">Get Skeleton</a></li>
+          <li><a href="https://developer.translink.ca/ServicesRtti">TransLink Real Time Transit Info</a></li>
+          <li><a href="https://www.mapbox.com">MapBox</a></li>
+          <li>```open -a Google\ Chrome --args --disable-web-security```</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+  <script src="/javascript/app.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

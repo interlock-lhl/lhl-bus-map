@@ -1,0 +1,8 @@
+#mapid {
+  height: 520px;
+  width: 100%;
+}
+
+.box-debug {
+  border: 1px solid red;
+}
