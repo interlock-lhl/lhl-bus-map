@@ -12,32 +12,19 @@
     })
   }).addTo(map);
 
-  var translink_api = "4p0ZVE64kyN6dEtSegme";
-  function api_url_generator(action) {
-    action = action || 'buses';
-    return "http://api.translink.ca/rttiapi/v1/" + action;
-  }
-
   $('#update').on('click', function() {
     query_buses();
   });
 
   var buses = {};
 
-  // window.setInterval(query_buses, 3000);
+  window.setInterval(query_buses, 3000);
 
   function query_buses() {
     $.ajax(
       {
-        url: api_url_generator(),
+        url: "/proxy/buses",
         method: 'GET',
-        data: {
-          apiKey: translink_api
-        },
-        // crossDomain : true,
-        headers: {
-          'accept': 'application/JSON'
-        },
         success: function(data) {
           update_map(data);
         }
